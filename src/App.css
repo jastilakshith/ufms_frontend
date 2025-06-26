@@ -1,0 +1,499 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 3vh;
+}
+
+h1{
+  padding: 2vh 0;
+  color: white;
+}
+
+h2{
+  font-size:larger;
+}
+
+.Applight{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95vw;
+  border:solid #d6d6d6 6px;
+  border-radius: 5vh;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 2vh;
+  background-color: #30a8a8;
+}
+
+.Appdark{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95vw;
+  border:solid #d6d6d6 6px;
+  border-radius: 5vh;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 2vh;
+  background-color: #244a4a;
+}
+
+.listcollapsedlight {
+  list-style-type: none;
+  border-radius: 10px;
+  padding: 2.5vh;
+  max-height: 10vh; /* instead of height */
+  transition: max-height 1.5s ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5vh;
+}
+
+.listcollapseddark{
+  list-style-type: none;
+  border-radius: 10px;
+  padding: 2.5vh;
+  max-height: 10vh; /* instead of height */
+  transition: max-height 1.5s ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #d6d6d6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5vh;
+}
+
+.listexpandedlight {
+  padding: 2.5vh;
+  list-style-type: none;
+  border-radius: 10px;
+  max-height: 160vh; /* some large value to allow full expansion */
+  overflow: hidden;
+  transition: max-height 2s ease;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5vh;
+}
+
+.listexpandeddark {
+  padding: 2.5vh;
+  list-style-type: none;
+  border-radius: 10px;
+  max-height: 160vh; /* some large value to allow full expansion */
+  overflow: hidden;
+  transition: max-height 2s ease;
+  display: flex;
+  flex-direction: column;
+  background-color: #d6d6d6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5vh;
+}
+
+.listtopcontainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listcontainer{
+  width: 80%;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.listsubcontainer{
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+}
+
+
+.buttonunclickedlight{
+  border-radius: 1vh;
+  transition: .3s;
+  background-color: #30a8a8;
+  height: 5vh;
+  width: 5vw;
+  color: white;
+  border: none;
+}
+
+.buttonunclickeddark{
+  border-radius: 1vh;
+  transition: .3s;
+  background-color: #244a4a;
+  height: 5vh;
+  width: 5vw;
+  color: white;
+  border: none;
+}
+
+.buttonclickedlight{
+  border-radius: 1vh;
+  transition: .3s;
+  background-color: #d6d6d6;
+  height: 5vh;
+  width: 5vw;
+  color: black;
+  border: none;
+}
+
+.buttonclickeddark{
+  border-radius: 1vh;
+  transition: .3s;
+  background-color: grey;
+  height: 5vh;
+  width: 5vw;
+  color: white;
+  border: none;
+}
+
+.buttonclickedlight:hover, .buttonunclickedlight:hover{
+  background-color: #d6d6d6;
+  color: black;
+}
+
+.buttonclickeddark:hover, .buttonunclickeddark:hover{
+  background-color: grey;
+}
+
+.description{
+  display: flex;
+  justify-content: center;
+}
+
+p{
+  font-weight: normal;
+}
+
+.utilitiescontainer{
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+
+.utilitybuttonslight{
+  background-color: white;
+  border-radius: 5vh;
+  border: none;
+  transition: .3s;
+}
+
+.utilitybuttonsdark{
+  background-color: #d6d6d6;
+  border-radius: 5vh;
+  border: none;
+  transition: .3s;
+}
+
+.utilitybuttonslight:hover{
+  background-color:  #d6d6d6;
+}
+
+.utilitybuttonsdark:hover{
+  color: white;
+  background-color: grey;
+}
+
+.lightdarktogglebuttonlight{
+  border: none;
+  border-radius: 5vh;
+  width: 5vw;
+  background-color: white;
+  transition: .3s;
+}
+
+.lightdarktogglebuttondark{
+  border: none;
+  border-radius: 5vh;
+  width: 5vw;
+  background-color: grey;
+  color: white;
+  transition: .3s;
+}
+
+.lightdarktogglebuttonlight:hover{
+  background-color: grey;
+  color: white;
+}
+
+.lightdarktogglebuttondark:hover{
+  color: black;
+  background-color:#d6d6d6;
+}
+
+.sortcontainer, .filtercontainer{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.reportbuttonlight{
+  border: none;
+  border-radius: 5vh;
+  background-color: white;
+  width: 10vw;
+  transition: .3s
+}
+
+.reportbuttondark{
+  border: none;
+  border-radius: 5vh;
+  background-color:#d6d6d6;
+  width: 10vw;
+  transition: .3s;
+}
+
+.reportbuttonlight:hover{
+  background-color: #d6d6d6;
+}
+
+.reportbuttondark:hover{
+  color: white;
+  background-color: grey;
+}
+
+
+
+.form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-contentlight {
+  background-color: white;
+  padding: 5vh;
+  border-radius: 5vh;
+  width: 25vw;
+  border:solid #d6d6d6 6px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.form-contentdark {
+  background-color: gray;
+  padding: 5vh;
+  border-radius: 5vh;
+  width: 25vw;
+  border:solid #d6d6d6 6px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+
+.formbuttonslight{
+  color: white;
+  border: none;
+  background-color: #30a8a8;
+  border-radius: 1vh;
+  height: 5vh;
+  width: 5vw;
+  margin-right: 1vh;
+  transition: .3s;
+}
+
+.formbuttonslight:hover{
+  color: black;
+  background-color: #d6d6d6;
+}
+
+.formbuttonsdark{
+  color: white;
+  border: none;
+  background-color:#244a4a;
+  border-radius: 1vh;
+  height: 5vh;
+  width: 5vw;
+  margin-right: 1vh;
+  transition: .3s;
+}
+
+.formbuttonsdark:hover{
+  background-color: #d6d6d6;
+  color: black;
+}
+
+.formh1dark,.formspandark{
+  color: white;
+}
+
+.formselectlight,.formselectdark{
+  background-color: #d6d6d6;
+  border-radius:5vh;
+}
+
+input{
+  width: 20vw;
+  background-color: #d6d6d6;
+  border: none;
+  height: 2.5vw;
+  border-radius: 1vh;
+  margin-bottom: 2vh;
+}
+
+textarea{
+  resize: none;
+  width: 20vw;
+  background-color: #d6d6d6;
+  border: none;
+  height: 9vw;
+  border-radius: 1vh;
+}
+
+span{
+  font-weight: normal;
+}
+
+.formselect{
+  margin-bottom: 2vh;
+}
+
+.submiterrorlight{
+  display: block;
+  font-weight: bold;
+  color: red;
+}
+
+.submiterrordark{
+  display: block;
+  font-weight: bold;
+  color: rgb(164 0 0);
+}
+
+.submitsuccesslight{
+  display: block;
+  font-weight: bold;
+  color: green;
+}
+
+.submitsuccessdark{
+  display: block;
+  font-weight: bold;
+  color: rgb(1, 59, 1);
+}
+
+
+
+
+@media (max-width: 600px) {
+    form{
+        width: 80%;
+    }
+  }
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  h3{
+    font-size: 13px;
+  }
+  h4, p {
+    font-size: 10px;
+  }
+  select{
+    width: max-content;
+    height: max-content;
+  }
+
+  .buttonclickedlight{
+    height: max-content;
+    width: 20vw;
+    border-radius: 0.6vh;
+  }
+
+  .buttonunclickedlight{
+    height: max-content;
+    width: 20vw;
+    border-radius: 0.6vh;
+  }
+
+  .buttonclickeddark{
+    height: max-content;
+    width: 20vw;
+    border-radius: 0.6vh;
+  }
+
+  .buttonunclickeddark{
+    height: max-content;
+    width: 20vw;
+    border-radius: 0.6vh;
+  }
+
+  .lightdarkbutton{
+    display: none;
+  }
+
+  .form-contentlight,.form-contentdark {
+    width: 55vw;
+    
+  }
+
+  input{
+    width: 30vw;
+    background-color: #d6d6d6;
+    border: none;
+    height: 6.5vw;
+    border-radius: 1vh;
+    margin-bottom: 2vh;
+  }
+  
+  textarea{
+    width: 30vw;
+    background-color: #d6d6d6;
+    border: none;
+    height: 20vw;
+    border-radius: 1vh;
+  }
+
+  .formbuttonslight, .formbuttonsdark{
+    width: 12.5vw;
+    height: 4vh;
+  }
+
+
+  .sortingselect{
+    width: 11.3vw;
+  }
+
+  .filterselect{
+    width:13.1vw;
+  }
+
+  .reportbuttonlight{
+    width: 30vw;
+  }
+
+  .lightdarktogglebuttonlight{
+    width: 15vw;
+  }
+  .reportbuttondark{
+    width: 30vw;
+  }
+
+  .lightdarktogglebuttondark{
+    width: 15vw;
+  }
+
+}
+
+
+

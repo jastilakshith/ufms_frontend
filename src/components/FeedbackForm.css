@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-color: lavender;
+    font-family: 'Roboto', sans-serif;
+}
+
+.labelreq{
+    display: block;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.forminputdiv{
+    border: solid gainsboro 0.5px;
+    margin: 1.6vh;
+    background-color: white;
+    padding-left: 1vw;
+    border-radius: 1.5vh;
+}
+
+
+
+textarea{
+    resize: none;   
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    height: 2.5vh;
+    width: 27.5%;
+    background-color: transparent;
+    transition: border-color 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.forminputfields{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    transition: border-color 1s;
+    margin-bottom: 4vh;
+}
+
+.forminputfieldsreq{
+    width: 50%;
+}
+
+.forminputfieldsreq:focus{
+    border-bottom: 2px solid purple;
+}
+
+.heading{
+    border-top: solid .8vh purple;
+}
+
+.feedbackh1{
+    margin-bottom: 2vh;
+}
+
+button{
+  margin-top: 4vh;
+  margin-left: 1.9vh;
+  margin-bottom: 4vh;
+  background-color: purple; /* Google blue */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  padding: 1.5vh 2vw; /* Reduced padding */
+  font-size: 2.5vh; /* Reduced font size */
+  font-weight: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    form{
+        width: 80%;
+    }
+  }
