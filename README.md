@@ -18,8 +18,8 @@ Make sure you have **Node.js** and **npm** installed. If not, install Node.js fr
    If you're using Git, clone the repository using:
 
    ```bash
-   git clone https://github.com/jastilakshith/safety_incident_dashboard
-   cd safety_incident_dashboard
+   git clone https://github.com/jastilakshith/ufms_frontend
+   cd ufms_frontend
    npm i
 2. **Start the Development Server**
    Once the dependencies are installed, start the development server with:
